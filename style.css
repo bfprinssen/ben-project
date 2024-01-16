@@ -24,24 +24,23 @@ body {
      color: #dbff4a;
  }
  .tcrlogo{
-     height: 75px;
-     margin: -20px;
-     width: auto;
- }
- .Write{
-     padding-bottom: 150px;
-         padding-right: 150px;}
+ height: 75px;
+ margin: -20px;
+ width: auto;
+ } .Write{
+ padding-bottom: 150px;
+ padding-right: 150px;}
 .cont {
 text-align: center;
 font-size: 60px;
  color: #dbff4a;
  display: flex;
- justify-content: center;
+  justify-content: center;
  align-items: center;
 }
 a{
     color: #dbff4a;
-    text-decoration: none;
+    
 }
 .groen{
     color: rgb(0, 0, 0);
@@ -57,14 +56,14 @@ a{
     margin-top: 100px;
     font-size: 55px;
     color: #dbff4a;    
-    background: none;
-    border: none;
     width: 100vw;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Imbue', serif;
+    text-decoration: none;
+   
 }
 p{
     color: #dbff4a;
@@ -75,4 +74,11 @@ p{
     margin-top: 100px;
     font-size: 35px;
     color: #dbff4a;
+}
+.streepje{
+    text-decoration: none;
+}
+.whitebackground{
+    background-color: white;
+
 }
