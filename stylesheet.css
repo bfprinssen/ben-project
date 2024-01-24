@@ -29,7 +29,6 @@ text-decoration: none;
 
 .quiz-header {
   padding: 4rem;
-
 }
 
 h2 {
@@ -93,3 +92,6 @@ ul {
   margin: -20px;
   width: auto;
   } 
+.quizpuntjes{
+ list-style-type: none;
+}
