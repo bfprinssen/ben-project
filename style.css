@@ -104,7 +104,7 @@ p{
     flex-direction: column;
   }
   .talent.learned {
-    background-color: lightgreen;
+    background-color: green;
    border: solid 2px black;
   }
 
@@ -116,4 +116,8 @@ p{
 .inschrijven{
     display: flex;
     justify-content: space-around;
+}
+.opentx{
+    display: flex;
+    justify-content: center;
 }

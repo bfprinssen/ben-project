@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz@10..100&display=swap" rel="stylesheet">
+
 </head>
 <body >
     <nav class="navbar">
         <ul>
-            <li ><a href="index.html" class="streepje">Home</a></li>  
+            <li><a href="index.html" class="streepje">Home</a></li>  
             <li ><a href="QUIZ.html" class="streepje" >Quiz</a></li>
             <li><a href="inschrijven.html" class="streepje">Inschrijven</a></li>
             <li><a href="leren.html" class="streepje">Leren</a></li>
@@ -21,38 +22,43 @@
             <a href="#" onclick="window.open('https://www.techniekcollegerotterdam.nl')"><img src="th.jpg" alt="tcr logo" class="tcrlogo" ></a>
         </ul>
     </nav> 
-    <div id="talentTree"></div>
+    
     <article>Op deze opleiding kom je veel te weten over progameren alles basis kenis wordt behandelt </article>
-    <script>
-      // Function to create a talent tree
-      function createTalentTree() {
-        const talents = ['Talent 1 Maak een portfolio website met HTML&CSS  ', 'Talent 2 Maak een inteactieve website met Javascript ', 'Talent 3 Maak een Database met MSQL&php', 'Talent 4 combineer alles wat geleerd hebt php&MSQL&Javascript&HTML en CSS'];
-        return talents;
-      }
+    <div id="talentTree"></div> 
+ <script>
+  // Function to create a talent tree
+  function createTalentTree() {
+    const talents = ['Talent 1 Maak een portfolio website met HTML&CSS  ', 
+    'Talent 2 Leer met elkaar werken met github en gitkraken ', 
+    'Talent 3 Maak een inteactieve website met Javascript ', 
+    'Talent 4 Maak een Database met MSQL&php',
+     'Talent 5 combineer alles wat geleerd hebt php&MSQL&Javascript&HTML en CSS', ];
+    return talents;
+  }
+
+  // Function to render the talent tree
+  function renderTalentTree(talents) {
+    const talentTreeElement = document.getElementById('talentTree');
+
+    talents.forEach(talentName => {
+      const talentElement = document.createElement('div');
+      talentElement.classList.add('talent');
+      talentElement.innerHTML = `<p>${talentName}</p>`;
+      talentElement.onclick = () => toggleLearned(talentElement);
+      talentTreeElement.appendChild(talentElement);
+    });
+  }
+
+  // Function to toggle learned status
+  function toggleLearned(talentElement) {
+    talentElement.classList.toggle('learned');
+  }
+
+  // Initialize talent tree and render it
+  const talents = createTalentTree();
+  renderTalentTree(talents); 
+</script>
   
-      // Function to render the talent tree
-      function renderTalentTree(talents) {
-        const talentTreeElement = document.getElementById('talentTree');
-  
-        talents.forEach(talentName => {
-          const talentElement = document.createElement('div');
-          talentElement.classList.add('talent');
-          talentElement.innerHTML = `<h3>${talentName}</h3>`;
-          talentElement.onclick = () => toggleLearned(talentElement);
-          talentTreeElement.appendChild(talentElement);
-        });
-      }
-  
-      // Function to toggle learned status
-      function toggleLearned(talentElement) {
-        talentElement.classList.toggle('learned');
-      }
-  
-      // Initialize talent tree and render it
-      const talents = createTalentTree();
-      renderTalentTree(talents);
-    </script>
- 
 
 </body>
 </html>
