@@ -94,6 +94,19 @@ p{
     display: flex;
     justify-content: space-between;
 }
+.talent {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  .talent.learned {
+    background-color: lightgreen;
+   border: solid 2px black;
+  }
 
 .inschrijftext{
     margin-right: 40%;
