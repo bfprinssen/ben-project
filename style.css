@@ -82,3 +82,15 @@ p{
     background-color: white;
 
 }
+.socials{
+    display: flex;
+    justify-content: space-around  ;
+    flex-direction: row;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+.foto{
+    display: flex;
+    justify-content: space-between;
+}
