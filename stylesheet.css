@@ -3,8 +3,8 @@
 }
 
 body {
-  background-color: #006455;
-  font-family: 'Imbue', serif;
+  background-color: #006445;
+  
   overflow: hidden;
   margin: 0;
   display: flex;
@@ -48,8 +48,8 @@ button {
   display: block;
   width: 100%;
   cursor: pointer;
-  font-size: 1.1rem;
-  font-family: inherit;
+  
+  
   padding: 1.3rem;
 }
 
@@ -87,11 +87,6 @@ ul {
     color: #dbff4a;
     text-decoration: none;
 }
-.tcrlogo{
-  height: 75px;
-  margin: -20px;
-  width: auto;
-  } 
 .quizpuntjes{
  list-style-type: none;
 }
