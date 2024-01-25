@@ -24,39 +24,40 @@
     </nav> 
     
     <article>Op deze opleiding kom je veel te weten over progameren alles basis kenis wordt behandelt </article>
-    <div id="talentTree"></div> 
+    <button onclick="window.location.reload()">reload</button>
+    <div id="talentTree">
+<div class="talent " onclick=" toggleLearned(1)" id="tlt1"><p>Talent 1 Maak een portfolio website met HTML&CSS</p></div>
+<div class="talent " onclick=" toggleLearned(2)" id="tlt2"><p>Talent 2 Leer met elkaar werken met github en gitkraken</p></div>
+<div class="talent " onclick=" toggleLearned(3)" id="tlt3"><p>Talent 3 Maak een inteactieve website met Javascript</p></div>
+<div class="talent " onclick=" toggleLearned(4)" id="tlt4"><p>Talent 4 Maak een Database met MSQL&php</p></div>
+<div class="talent " onclick=" toggleLearned(5)" id="tlt5"><p>Talent 5 combineer alles wat geleerd hebt php&MSQL&Javascript&HTML en CSS</p></div>
+
+
+
+
+    </div> 
  <script>
-  // Function to create a talent tree
-  function createTalentTree() {
-    const talents = ['Talent 1 Maak een portfolio website met HTML&CSS  ', 
-    'Talent 2 Leer met elkaar werken met github en gitkraken ', 
-    'Talent 3 Maak een inteactieve website met Javascript ', 
-    'Talent 4 Maak een Database met MSQL&php',
-     'Talent 5 combineer alles wat geleerd hebt php&MSQL&Javascript&HTML en CSS', ];
-    return talents;
+  //met behulp van luc 
+  var tlt;
+  var classchek;
+  
+  function 
+  
+  toggleLearned(tlt) {
+    if(tlt === 1 ) {
+      document.getElementById('tlt1').classList="learned" ;
+    }
+    if  (tlt === 2 && document.getElementById('tlt1').classList.contains('learned')===true ) {document.getElementById('tlt2').classList="learned" ;}
+    if(tlt === 3 && document.getElementById('tlt2').classList.contains('learned')===true ) {document.getElementById('tlt3').classList="learned" ;}
+    if(tlt === 4 && document.getElementById('tlt3').classList.contains('learned')===true ) {document.getElementById('tlt4').classList="learned" ;}
+    if(tlt === 5 && document.getElementById('tlt4').classList.contains('learned')===true ) {document.getElementById('tlt5').classList="learned" ;}
+    
   }
 
-  // Function to render the talent tree
-  function renderTalentTree(talents) {
-    const talentTreeElement = document.getElementById('talentTree');
+    
+  
 
-    talents.forEach(talentName => {
-      const talentElement = document.createElement('div');
-      talentElement.classList.add('talent');
-      talentElement.innerHTML = `<p>${talentName}</p>`;
-      talentElement.onclick = () => toggleLearned(talentElement);
-      talentTreeElement.appendChild(talentElement);
-    });
-  }
-
-  // Function to toggle learned status
-  function toggleLearned(talentElement) {
-    talentElement.classList.toggle('learned');
-  }
-
-  // Initialize talent tree and render it
-  const talents = createTalentTree();
-  renderTalentTree(talents); 
+   
 </script>
   
 

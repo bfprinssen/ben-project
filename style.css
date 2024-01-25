@@ -102,10 +102,12 @@ p{
     cursor: pointer;
     display: flex;
     flex-direction: column;
+
   }
-  .talent.learned {
+.learned {
     background-color: green;
    border: solid 2px black;
+   
   }
 
 .inschrijftext{
@@ -120,4 +122,7 @@ p{
 .opentx{
     display: flex;
     justify-content: center;
+}
+.roodlt{
+    color: black;
 }
