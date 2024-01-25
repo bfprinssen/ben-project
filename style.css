@@ -126,3 +126,8 @@ p{
 .roodlt{
     color: black;
 }
+.talenttreetext{
+    display: flex;
+    justify-content: center;
+   
+}
