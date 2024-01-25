@@ -126,3 +126,8 @@ p{
 .roodlt{
     color: black;
 }
+.reloadbv{
+    display: flex;
+    top: 100px; right: 16px;
+    position: absolute;
+}
