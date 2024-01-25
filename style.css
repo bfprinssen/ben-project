@@ -131,3 +131,8 @@ p{
     justify-content: center;
    
 }
+.reloadbv{
+    display: flex;
+    top: 100px; right: 16px;
+    position: absolute;
+}
