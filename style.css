@@ -137,3 +137,6 @@ p{
     top: 100px; right: 16px;
     position: absolute;
 }
+.geenpunt{
+  list-style-type: none;
+}
